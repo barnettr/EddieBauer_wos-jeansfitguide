@@ -1,0 +1,551 @@
+﻿div.fitTool {
+    position:relative;
+    margin: auto 0;
+    width: 792px;
+    height:550px;
+    background:url(bg_792x550.jpg) no-repeat scroll 0 0 transparent !important;   
+}
+.carousel {
+    position:relative;
+    height:360px;
+    margin-top:0px;
+}
+.carousel li {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+}
+
+.carousel li.active {
+    z-index:10;
+}
+
+.carousel li.last-active {
+    z-index:9;
+}
+.looseFitWrapper {
+    width:130px;
+    height:550px;
+    margin:0 3px 0 0;
+    margin:0 2px 0 0\0/;
+    float:left;
+    display:inline;
+    padding:0;
+    background-color:transparent;
+    position:relative;    
+}
+*+html .looseFitWrapper {
+    margin:0 2px 0 0;    
+}
+.relaxedFitWrapper {
+    width:130px;
+    height:550px;
+    margin:0 2px 0 0;
+    margin:0 2px 0 0\0/;
+    float:left;
+    display:inline;
+    padding:0;
+    background-color:transparent;
+    position:relative;    
+}
+*+html .relaxedFitWrapper {
+    margin:0 2px 0 0;    
+}
+.classicFitWrapper {
+    width:130px;
+    height:550px;
+    margin:0 2px 0 0;
+    margin:0 2px 0 0\0/;
+    float:left;
+    display:inline;
+    padding:0;
+    background-color:transparent;
+    position:relative;    
+}
+*+html .classicFitWrapper {
+    margin:0 2px 0 0;    
+}
+.traditionalFitWrapper {
+    width:130px;
+    height:550px;
+    margin:0 2px 0 0;
+    margin:0 2px 0 0\0/;
+    float:left;
+    display:inline;
+    padding:0;
+    background-color:transparent;
+    position:relative;    
+}
+*+html .traditionalFitWrapper {
+    margin:0 2px 0 0;    
+}
+.straightFitWrapper {
+    width:130px;
+    height:550px;
+    margin:0 2px 0 0;
+    margin:0 2px 0 0\0/;
+    float:left;
+    display:inline;
+    padding:0;
+    background-color:transparent;
+    position:relative;    
+}
+*+html .straightFitWrapper {
+    margin:0 2px 0 0;    
+}
+.slimFitWrapper {
+    width:130px;
+    height:550px;
+    margin:0 0 0 0;
+    margin:0 0 0 0\0/;
+    float:left;
+    display:inline;
+    padding:0;
+    background-color:transparent;
+    position:relative;    
+}
+*+html .slimFitWrapper {
+    margin:0 0 0 0;    
+}
+ul.listWrapper {
+    color: #666666;
+    font-family: Lucida Sans Unicode;
+    font-size: 11px;
+    font-weight: normal;
+    list-style: none;
+    margin:7px 0 0 10px;
+    padding:0;
+}
+ul.listWrapper li {line-height:15px;}
+ul#looseFit {
+    list-style-type: none;
+    margin:0 0 0 0;    
+}
+    ul#looseFit li {
+        float: left;
+    }
+    ul#looseFit li#front a {
+        float:left;
+        background-image: url(sprite_models_mens.jpg);
+        background-position: 0px 0px;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 360px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+    }
+    ul#looseFit li#side a {
+        float:left;
+        background-image: url(sprite_models_mens.jpg);
+        background-position: 0px -720px;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 360px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+    }
+    ul#looseFit li#back a {
+        float:left;
+        background-image: url(sprite_models_mens.jpg);
+        background-position: 0px -360px;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 360px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+    }
+ul#relaxedFit {
+    list-style-type: none;
+    margin:0 0 0 0;    
+}
+    ul#relaxedFit li {
+        float: left;
+    }
+    ul#relaxedFit li#front2 a {
+        float:left;
+        background-image: url(sprite_models_mens.jpg);
+        background-position: -130px 0px;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 360px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+    }
+    ul#relaxedFit li#side2 a {
+        float:left;
+        background-image: url(sprite_models_mens.jpg);
+        background-position: -130px -720px;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 360px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+    }
+    ul#relaxedFit li#back2 a {
+        float:left;
+        background-image: url(sprite_models_mens.jpg);
+        background-position: -130px -360px;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 360px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+    }
+ul#classicFit {
+    list-style-type: none;
+    margin:0 0 0 0; 
+}
+    ul#classicFit li {
+        float: left;
+    }
+    ul#classicFit li#front3 a {
+        float:left;
+        background-image: url(sprite_models_mens.jpg);
+        background-position: -260px 0px;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 360px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+    }
+    ul#classicFit li#side3 a {
+        float:left;
+        background-image: url(sprite_models_mens.jpg);
+        background-position: -260px -720px;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 360px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+    }
+    ul#classicFit li#back3 a {
+        float:left;
+        background-image: url(sprite_models_mens.jpg);
+        background-position: -260px -360px;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 360px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+    }
+ul#traditionalFit {
+    list-style-type: none;
+    margin:0 0 0 0; 
+}
+    ul#traditionalFit li {
+        float: left;
+    }
+    ul#traditionalFit li#front4 a {
+        float:left;
+        background-image: url(sprite_models_mens.jpg);
+        background-position: -390px 0px;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 360px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+    }
+    ul#traditionalFit li#side4 a {
+        float:left;
+        background-image: url(sprite_models_mens.jpg);
+        background-position: -390px -720px;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 360px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+    }
+    ul#traditionalFit li#back4 a {
+        float:left;
+        background-image: url(sprite_models_mens.jpg);
+        background-position: -390px -360px;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 360px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+    }
+ul#straightFit {
+    list-style-type: none;
+    margin:0 0 0 0; 
+}
+    ul#straightFit li {
+        float: left;
+    }
+    ul#straightFit li#front5 a {
+        float:left;
+        background-image: url(sprite_models_mens.jpg);
+        background-position: -520px 0px;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 360px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+    }
+    ul#straightFit li#side5 a {
+        float:left;
+        background-image: url(sprite_models_mens.jpg);
+        background-position: -520px -720px;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 360px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+    }
+    ul#straightFit li#back5 a {
+        float:left;
+        background-image: url(sprite_models_mens.jpg);
+        background-position: -520px -360px;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 360px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+    }
+ul#slimFit {
+    list-style-type: none;
+    margin:0 0 0 0; 
+}
+    ul#slimFit li {
+        float: left;
+    }
+    ul#slimFit li#front6 a {
+        float:left;
+        background-image: url(sprite_models_mens.jpg);
+        background-position: -650px 0px;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 360px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+    }
+    ul#slimFit li#side6 a {
+        float:left;
+        background-image: url(sprite_models_mens.jpg);
+        background-position: -650px -720px;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 360px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+    }
+    ul#slimFit li#back6 a {
+        float:left;
+        background-image: url(sprite_models_mens.jpg);
+        background-position: -650px -360px;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 360px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+    }
+
+div.dashboard {
+    position:absolute;
+    width:40px;
+    height:60px;
+    left:92px;
+    top:430px;
+    z-index:999;    
+}
+div.dashboard.last {
+    left:88px;    
+}
+div.dashboard a {
+    text-decoration:none;    
+}
+div.dashboard img.round_arrow {
+    cursor:pointer;
+    width:22px;
+    border:0px;
+    height:15px;
+    z-index:999;
+    background-image: url(sprite_fittool.png);
+    background-position: 0px -100px;
+    background-repeat: no-repeat;     
+}
+div.shopnow {
+    font-family: Lucida Sans Unicode;
+    font-size: 10px;
+    font-weight:bold;
+    color:#999999;
+    text-transform:uppercase;
+    text-decoration:none;
+    cursor:pointer;   
+}
+div.button-side {
+    margin-top:-4px    
+}
+div.button-back {
+    margin-top:-4px    
+}
+div.shopnow:hover {
+    font-family: Lucida Sans Unicode;
+    font-size: 10px;
+    font-weight:bold;
+    color:#000000;
+    text-transform:uppercase;
+    text-decoration:none;
+    cursor:pointer;   
+}
+div.shopnow.nav_on {
+    font-family: Lucida Sans Unicode;
+    font-size: 10px;
+    font-weight:bold;
+    color:#000000;
+    text-transform:uppercase;
+    text-decoration:none;
+    cursor:pointer;
+}
+div.shopnow.nav_off {
+    font-size: 10px;        
+}
+div.details {
+    font-family: Lucida Sans Unicode;
+    font-size: 11px;
+    font-weight:bold;
+    color:#000000;
+    text-transform:uppercase;
+    text-decoration:none;
+    cursor:pointer;   
+}
+div.details a {
+    text-decoration:none;    
+}
+div.shop_details {
+    position:relative;
+    margin: -10px 0 0 12px;
+    float:left;
+    display:inline;
+    z-index:100;
+    overflow:visible;    
+}
+div.shop_details img.gray_arrow {
+    background-image: url(sprite_fittool.png);
+    background-position: -25px -100px;
+    background-repeat: no-repeat;        
+}
+div.details_shop {
+    margin:-2px 0 0 12px;
+    margin: 4px 0 0 -60px\0/;
+    float:left;
+    display:inline;
+    z-index:100;
+    overflow:visible;    
+}
+*+html div.details_shop {
+    margin: 4px 0 0 -60px;    
+}
+div.details_shop img.gray_arrow {
+    background-image: url(sprite_fittool.png);
+    background-position: -25px -100px;
+    background-repeat: no-repeat;        
+}
+div.looseflag {
+    width:121px;
+    height:23px;
+    margin:79px 0 0 5px;    
+}
+div.looseflag a img {
+    background-image: url(sprite_fittool.gif);
+    background-position: 0px -230px;
+    background-repeat: no-repeat;
+    width:121px;
+    height:23px;      
+}
+div.relaxedflag {
+    width:121px;
+    height:23px;
+    margin:79px 0 0 5px;    
+}
+div.relaxedflag a img {
+    background-image: url(sprite_fittool.gif);
+    background-position: 0px -260px;
+    background-repeat: no-repeat;
+    width:121px;
+    height:23px;      
+}
+div.classicflag {
+    width:121px;
+    height:23px;
+    margin:79px 0 0 5px;    
+}
+div.classicflag a img {
+    background-image: url(sprite_fittool.gif);
+    background-position: 0px -290px;
+    background-repeat: no-repeat;      
+}
+div.traditionalflag {
+    width:121px;
+    height:23px;
+    margin:79px 0 0 5px;    
+}
+div.traditionalflag a img {
+    background-image: url(sprite_fittool.gif);
+    background-position: 0px -320px;
+    background-repeat: no-repeat;      
+}
+div.straightflag {
+    width:121px;
+    height:23px;
+    margin:79px 0 0 5px;    
+}
+div.straightflag a img {
+    background-image: url(sprite_fittool.gif);
+    background-position: 0px -350px;
+    background-repeat: no-repeat;      
+}
+div.slimflag {
+    width:121px;
+    height:23px;
+    margin:79px 0 0 5px;    
+}
+div.slimflag a img {
+    background-image: url(sprite_fittool.gif);
+    background-position: 0px -380px;
+    background-repeat: no-repeat;      
+}
+
+* html div#curve-shape {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src=sprite_fittool.png,sizingMethod='crop');
+}
+*+html div#curve-shape {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src=sprite_fittool.png,sizingMethod='crop');
+}
+* html div#slightly-curvey {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src=sprite_fittool.png,sizingMethod='crop');
+}
+*+html div#slightly-curvey {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src=sprite_fittool.png,sizingMethod='crop');
+}
+* html div#straight-shape {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src=sprite_fittool.png,sizingMethod='crop');
+}
+*+html div#straight-shape {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src=sprite_fittool.png,sizingMethod='crop');
+} 

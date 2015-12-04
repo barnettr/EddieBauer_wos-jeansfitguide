@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Detail Fit Tool Guide - Proof Of Concept</title>
+    <link rel="stylesheet" href="slideshow.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="mensDetailFitTool.css" type="text/css" media="screen" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript" src="module.slideshow.js"></script>
+    <script language="javascript" type="text/javascript" src="module.fitToolDetail.120614.js"></script>
+    
+    <script language="javascript" type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('div.carousel').fitTool('init');
+            jQuery('#button-front').click(function () { jQuery('div.looseFitWrapper div.carousel li#front').fitTool('front'); });
+            jQuery('#button-side').click(function () { jQuery('div.looseFitWrapper div.carousel li#side').fitTool('side'); });
+            jQuery('#button-back').click(function () { jQuery('div.looseFitWrapper div.carousel li#back').fitTool('back'); });
+            jQuery('#arrow-next').click(function () { jQuery('div.looseFitWrapper div.carousel li.active').fitTool('arrow'); });
+
+            jQuery('#button-front2').click(function () { jQuery('div.relaxedFitWrapper div.carousel li#front2').fitTool('front'); });
+            jQuery('#button-side2').click(function () { jQuery('div.relaxedFitWrapper div.carousel li#side2').fitTool('side'); });
+            jQuery('#button-back2').click(function () { jQuery('div.relaxedFitWrapper div.carousel li#back2').fitTool('back'); });
+            jQuery('#arrow-next2').click(function () { jQuery('div.relaxedFitWrapper div.carousel li.active').fitTool('arrow'); });
+
+            jQuery('#button-front3').click(function () { jQuery('div.classicFitWrapper div.carousel li#front3').fitTool('front'); });
+            jQuery('#button-side3').click(function () { jQuery('div.classicFitWrapper div.carousel li#side3').fitTool('side'); });
+            jQuery('#button-back3').click(function () { jQuery('div.classicFitWrapper div.carousel li#back3').fitTool('back'); });
+            jQuery('#arrow-next3').click(function () { jQuery('div.classicFitWrapper div.carousel li.active').fitTool('arrow'); });
+
+            jQuery('#button-front4').click(function () { jQuery('div.traditionalFitWrapper div.carousel li#front4').fitTool('front'); });
+            jQuery('#button-side4').click(function () { jQuery('div.traditionalFitWrapper div.carousel li#side4').fitTool('side'); });
+            jQuery('#button-back4').click(function () { jQuery('div.traditionalFitWrapper div.carousel li#back4').fitTool('back'); });
+            jQuery('#arrow-next4').click(function () { jQuery('div.traditionalFitWrapper div.carousel li.active').fitTool('arrow'); });
+
+            jQuery('#button-front5').click(function () { jQuery('div.straightFitWrapper div.carousel li#front5').fitTool('front'); });
+            jQuery('#button-side5').click(function () { jQuery('div.straightFitWrapper div.carousel li#side5').fitTool('side'); });
+            jQuery('#button-back5').click(function () { jQuery('div.straightFitWrapper div.carousel li#back5').fitTool('back'); });
+            jQuery('#arrow-next5').click(function () { jQuery('div.straightFitWrapper div.carousel li.active').fitTool('arrow'); });
+
+            jQuery('#button-front6').click(function () { jQuery('div.slimFitWrapper div.carousel li#front6').fitTool('front'); });
+            jQuery('#button-side6').click(function () { jQuery('div.slimFitWrapper div.carousel li#side6').fitTool('side'); });
+            jQuery('#button-back6').click(function () { jQuery('div.slimFitWrapper div.carousel li#back6').fitTool('back'); });
+            jQuery('#arrow-next6').click(function () { jQuery('div.slimFitWrapper div.carousel li.active').fitTool('arrow'); });
+
+            jQuery('div.slideshow').slideshow();
+            function getPage(i) {
+                jQuery('.control-button[index=' + i + ']').trigger('click');
+            }
+            
+            function preload(arrayOfImages) {
+                $(arrayOfImages).each(function () {
+                    $('<img/>')[0].src = this;
+                });
+            }
+
+            preload([
+                '/assets/ocp/content/fitting_room/men/120806/slide_slim_back.jpg',
+                '/assets/ocp/content/fitting_room/men/120806/slide_slim_side.jpg',
+                '/assets/ocp/content/fitting_room/men/120806/slide_slim_front.jpg',
+                '/assets/ocp/content/fitting_room/men/120806/slide_straight_back.jpg',
+                '/assets/ocp/content/fitting_room/men/120806/slide_straight_side.jpg',
+                '/assets/ocp/content/fitting_room/men/120806/slide_straight_front.jpg',
+                '/assets/ocp/content/fitting_room/men/120806/slide_trad_back.jpg',
+                '/assets/ocp/content/fitting_room/men/120806/slide_trad_side.jpg',
+                '/assets/ocp/content/fitting_room/men/120806/slide_trad_front.jpg',
+                '/assets/ocp/content/fitting_room/men/120806/slide_classic_back.jpg',
+                '/assets/ocp/content/fitting_room/men/120806/slide_classic_side.jpg',
+                '/assets/ocp/content/fitting_room/men/120806/slide_classic_front.jpg',
+                '/assets/ocp/content/fitting_room/men/120806/slide_relaxed_back.jpg',
+                '/assets/ocp/content/fitting_room/men/120806/slide_relaxed_side.jpg',
+                '/assets/ocp/content/fitting_room/men/120806/slide_relaxed_front.jpg',
+                '/assets/ocp/content/fitting_room/men/120806/slide_loose_back.jpg',
+                '/assets/ocp/content/fitting_room/men/120806/slide_loose_side.jpg',
+                '/assets/ocp/content/fitting_room/men/120806/slide_loose_front.jpg'
+            ]);
+        });   
+		</script>
+</head>
+<body>
+
+<div id="mensDetailFitGuide">
+    <div class="slideshow large" rel="{ 'stopSlideId': 1 , 'hoverStopSlide': 'false' }">
+        <div class="slides looseFitWrapper">
+            <div class="carousel">
+                <ul id="looseFit">
+                    <li id="front" class="front active"><img src="shim.gif" width="792" height="550" border="0" usemap="#m_slide_01_front" alt="" /></li>
+                    <li id="side" class="side"><img src="shim.gif" width="792" height="550" border="0" usemap="#m_slide_01_side" alt="" /></li>
+                    <li id="back" class="back"><img src="shim.gif" width="792" height="550" border="0" usemap="#m_slide_01_back" alt="" /></li>
+                </ul>
+                <map id="m_slide_01_front" name="m_slide_01_front">
+                    <area shape="rect" coords="602,26,750,54" href="" title="Back To All Fits" alt="Back To All Fits" name="" />
+                    <area shape="rect" coords="608,118,716,138" href="" title="Shop This Fit" alt="Shop This Fit" name="" />
+                    <area shape="rect" coords="604,401,733,427" href="" title="View Size Chart" alt="View Size Chart" name="" />
+                    <area shape="rect" coords="2,2,586,548" href="" title="Shop Straight Shape Jeans" alt="Shop Straight Shape Jeans" name="" />
+                </map>
+                <map id="m_slide_01_side" name="m_slide_01_side">
+                    <area shape="rect" coords="602,26,750,54" href="" title="Back To All Fits" alt="Back To All Fits" name="" />
+                    <area shape="rect" coords="608,118,716,138" href="" title="Shop This Fit" alt="Shop This Fit" name="" />
+                    <area shape="rect" coords="604,401,733,427" href="" title="View Size Chart" alt="View Size Chart" name="" />
+                    <area shape="rect" coords="2,2,586,548" href="" title="Shop Straight Shape Jeans" alt="Shop Straight Shape Jeans" name="" />
+                </map>
+                <map id="m_slide_01_back" name="m_slide_01_back">
+                    <area shape="rect" coords="602,26,750,54" href="" title="Back To All Fits" alt="Back To All Fits" name="" />
+                    <area shape="rect" coords="608,118,716,138" href="" title="Shop This Fit" alt="Shop This Fit" name="" />
+                    <area shape="rect" coords="604,401,733,427" href="" title="View Size Chart" alt="View Size Chart" name="" />
+                    <area shape="rect" coords="2,2,586,548" href="" title="Shop Straight Shape Jeans" alt="Shop Straight Shape Jeans" name="" />
+                </map>
+            </div>
+        </div>
+        <div class="slides relaxedFitWrapper">
+            <div class="carousel">
+                <ul id="relaxedFit">
+                    <li id="front2" class="front active"><img src="shim.gif" width="792" height="550" border="0" usemap="#m_slide_02_front" alt="" /></li>
+                    <li id="side2" class="side"><img src="shim.gif" width="792" height="550" border="0" usemap="#m_slide_02_side" alt="" /></li>
+                    <li id="back2" class="back"><img src="shim.gif" width="792" height="550" border="0" usemap="#m_slide_02_back" alt="" /></li>
+                </ul>
+                <map id="m_slide_02_front" name="m_slide_02_front">
+                    <area shape="rect" coords="602,26,750,54" href="" title="Back To All Fits" alt="Back To All Fits" name="" />
+                    <area shape="rect" coords="608,118,716,138" href="" title="Shop This Fit" alt="Shop This Fit" name="" />
+                    <area shape="rect" coords="604,383,728,407" href="" title="View Size Chart" alt="View Size Chart" name="" />
+                    <area shape="rect" coords="2,2,586,548" href="" title="Shop Straight Shape Jeans" alt="Shop Straight Shape Jeans" name="" />
+                </map>
+                <map id="m_slide_02_side" name="m_slide_02_side">
+                    <area shape="rect" coords="602,26,750,54" href="" title="Back To All Fits" alt="Back To All Fits" name="" />
+                    <area shape="rect" coords="608,118,716,138" href="" title="Shop This Fit" alt="Shop This Fit" name="" />
+                    <area shape="rect" coords="604,383,728,407" href="" title="View Size Chart" alt="View Size Chart" name="" />
+                    <area shape="rect" coords="2,2,586,548" href="" title="Shop Straight Shape Jeans" alt="Shop Straight Shape Jeans" name="" />
+                </map>
+                <map id="m_slide_02_back" name="m_slide_02_back">
+                    <area shape="rect" coords="602,26,750,54" href="" title="Back To All Fits" alt="Back To All Fits" name="" />
+                    <area shape="rect" coords="608,118,716,138" href="" title="Shop This Fit" alt="Shop This Fit" name="" />
+                    <area shape="rect" coords="604,383,728,407" href="" title="View Size Chart" alt="View Size Chart" name="" />
+                    <area shape="rect" coords="2,2,586,548" href="" title="Shop Straight Shape Jeans" alt="Shop Straight Shape Jeans" name="" />
+                </map>
+            </div>
+        </div>
+        <div class="slides classicFitWrapper">
+            <div class="carousel">
+                <ul id="classicFit">
+                    <li id="front3" class="front active"><img src="shim.gif" width="792" height="550" border="0" usemap="#m_slide_03_front" alt="" /></li>
+                    <li id="side3" class="side"><img src="shim.gif" width="792" height="550" border="0" usemap="#m_slide_03_side" alt="" /></li>
+                    <li id="back3" class="back"><img src="shim.gif" width="792" height="550" border="0" usemap="#m_slide_03_back" alt="" /></li>
+                </ul>
+                <map id="m_slide_03_front" name="m_slide_03_front">
+                    <area shape="rect" coords="602,26,750,54" href="" title="Back To All Fits" alt="Back To All Fits" name="" />
+                    <area shape="rect" coords="608,118,716,138" href="" title="Shop This Fit" alt="Shop This Fit" name="" />
+                    <area shape="rect" coords="604,383,728,407" href="" title="View Size Chart" alt="View Size Chart" name="" />
+                    <area shape="rect" coords="2,2,586,548" href="" title="Shop Straight Shape Jeans" alt="Shop Straight Shape Jeans" name="" />
+                </map>
+                <map id="m_slide_03_side" name="m_slide_03_side">
+                    <area shape="rect" coords="602,26,750,54" href="" title="Back To All Fits" alt="Back To All Fits" name="" />
+                    <area shape="rect" coords="608,118,716,138" href="" title="Shop This Fit" alt="Shop This Fit" name="" />
+                    <area shape="rect" coords="604,383,728,407" href="" title="View Size Chart" alt="View Size Chart" name="" />
+                    <area shape="rect" coords="2,2,586,548" href="" title="Shop Straight Shape Jeans" alt="Shop Straight Shape Jeans" name="" />
+                </map>
+                <map id="m_slide_03_back" name="m_slide_03_back">
+                    <area shape="rect" coords="602,26,750,54" href="" title="Back To All Fits" alt="Back To All Fits" name="" />
+                    <area shape="rect" coords="608,118,716,138" href="" title="Shop This Fit" alt="Shop This Fit" name="" />
+                    <area shape="rect" coords="604,383,728,407" href="" title="View Size Chart" alt="View Size Chart" name="" />
+                    <area shape="rect" coords="2,2,586,548" href="" title="Shop Straight Shape Jeans" alt="Shop Straight Shape Jeans" name="" />
+                </map>
+            </div>
+        </div>
+        <div class="slides traditionalFitWrapper">
+            <div class="carousel">
+                <ul id="traditionalFit">
+                    <li id="front4" class="front active"><img src="shim.gif" width="792" height="550" border="0" usemap="#m_slide_04_front" alt="" /></li>
+                    <li id="side4" class="side"><img src="shim.gif" width="792" height="550" border="0" usemap="#m_slide_04_side" alt="" /></li>
+                    <li id="back4" class="back"><img src="shim.gif" width="792" height="550" border="0" usemap="#m_slide_04_back" alt="" /></li>
+                </ul>
+                <map id="m_slide_04_front" name="m_slide_04_front">
+                    <area shape="rect" coords="602,26,750,54" href="" title="Back To All Fits" alt="Back To All Fits" name="" />
+                    <area shape="rect" coords="608,118,716,138" href="" title="Shop This Fit" alt="Shop This Fit" name="" />
+                    <area shape="rect" coords="604,383,728,407" href="" title="View Size Chart" alt="View Size Chart" name="" />
+                    <area shape="rect" coords="2,2,586,548" href="" title="Shop Straight Shape Jeans" alt="Shop Straight Shape Jeans" name="" />
+                </map>
+                <map id="m_slide_04_side" name="m_slide_04_side">
+                    <area shape="rect" coords="602,26,750,54" href="" title="Back To All Fits" alt="Back To All Fits" name="" />
+                    <area shape="rect" coords="608,118,716,138" href="" title="Shop This Fit" alt="Shop This Fit" name="" />
+                    <area shape="rect" coords="604,383,728,407" href="" title="View Size Chart" alt="View Size Chart" name="" />
+                    <area shape="rect" coords="2,2,586,548" href="" title="Shop Straight Shape Jeans" alt="Shop Straight Shape Jeans" name="" />
+                </map>
+                <map id="m_slide_04_back" name="m_slide_04_back">
+                    <area shape="rect" coords="602,26,750,54" href="" title="Back To All Fits" alt="Back To All Fits" name="" />
+                    <area shape="rect" coords="608,118,716,138" href="" title="Shop This Fit" alt="Shop This Fit" name="" />
+                    <area shape="rect" coords="604,383,728,407" href="" title="View Size Chart" alt="View Size Chart" name="" />
+                    <area shape="rect" coords="2,2,586,548" href="" title="Shop Straight Shape Jeans" alt="Shop Straight Shape Jeans" name="" />
+                </map>
+            </div>
+        </div>
+        <div class="slides straightFitWrapper">
+            <div class="carousel">
+                <ul id="straightFit">
+                    <li id="front5" class="front active"><img src="shim.gif" width="792" height="550" border="0" usemap="#m_slide_05_front" alt="" /></li>
+                    <li id="side5" class="side"><img src="shim.gif" width="792" height="550" border="0" usemap="#m_slide_05_side" alt="" /></li>
+                    <li id="back5" class="back"><img src="shim.gif" width="792" height="550" border="0" usemap="#m_slide_05_back" alt="" /></li>
+                </ul>
+                <map id="m_slide_05_front" name="m_slide_05_front">
+                    <area shape="rect" coords="602,26,750,54" href="" title="Back To All Fits" alt="Back To All Fits" name="" />
+                    <area shape="rect" coords="608,118,716,138" href="" title="Shop This Fit" alt="Shop This Fit" name="" />
+                    <area shape="rect" coords="602,382,731,411" href="" title="View Size Chart" alt="View Size Chart" name="" />
+                    <area shape="rect" coords="2,2,586,548" href="" title="Shop Straight Shape Jeans" alt="Shop Straight Shape Jeans" name="" />
+                </map>
+                <map id="m_slide_05_side" name="m_slide_05_side">
+                    <area shape="rect" coords="602,26,750,54" href="" title="Back To All Fits" alt="Back To All Fits" name="" />
+                    <area shape="rect" coords="608,118,716,138" href="" title="Shop This Fit" alt="Shop This Fit" name="" />
+                    <area shape="rect" coords="602,382,731,411" href="" title="View Size Chart" alt="View Size Chart" name="" />
+                    <area shape="rect" coords="2,2,586,548" href="" title="Shop Straight Shape Jeans" alt="Shop Straight Shape Jeans" name="" />
+                </map>
+                <map id="m_slide_05_back" name="m_slide_05_back">
+                    <area shape="rect" coords="602,26,750,54" href="" title="Back To All Fits" alt="Back To All Fits" name="" />
+                    <area shape="rect" coords="608,118,716,138" href="" title="Shop This Fit" alt="Shop This Fit" name="" />
+                    <area shape="rect" coords="602,382,731,411" href="" title="View Size Chart" alt="View Size Chart" name="" />
+                    <area shape="rect" coords="2,2,586,548" href="" title="Shop Straight Shape Jeans" alt="Shop Straight Shape Jeans" name="" />
+                </map>
+            </div>
+        </div>
+        <div class="slides slimFitWrapper">
+            <div class="carousel">
+                <ul id="slimFit">
+                    <li id="front6" class="front active"><img src="shim.gif" width="792" height="550" border="0" usemap="#m_slide_06_front" alt="" /></li>
+                    <li id="side6" class="side"><img src="shim.gif" width="792" height="550" border="0" usemap="#m_slide_06_side" alt="" /></li>
+                    <li id="back6" class="back"><img src="shim.gif" width="792" height="550" border="0" usemap="#m_slide_06_back" alt="" /></li>
+                </ul>
+                <map id="m_slide_06_front" name="m_slide_06_front">
+                    <area shape="rect" coords="602,26,750,54" href="" title="Back To All Fits" alt="Back To All Fits" name="" />
+                    <area shape="rect" coords="608,118,716,138" href="" title="Shop This Fit" alt="Shop This Fit" name="" />
+                    <area shape="rect" coords="602,382,728,409" href="" title="View Size Chart" alt="View Size Chart" name="" />
+                    <area shape="rect" coords="2,2,586,548" href="" title="Shop Straight Shape Jeans" alt="Shop Straight Shape Jeans" name="" />
+                </map>
+                <map id="m_slide_06_side" name="m_slide_06_side">
+                    <area shape="rect" coords="602,26,750,54" href="" title="Back To All Fits" alt="Back To All Fits" name="" />
+                    <area shape="rect" coords="608,118,716,138" href="" title="Shop This Fit" alt="Shop This Fit" name="" />
+                    <area shape="rect" coords="602,382,728,409" href="" title="View Size Chart" alt="View Size Chart" name="" />
+                    <area shape="rect" coords="2,2,586,548" href="" title="Shop Straight Shape Jeans" alt="Shop Straight Shape Jeans" name="" />
+                </map>
+                <map id="m_slide_06_back" name="m_slide_06_back">
+                    <area shape="rect" coords="602,26,750,54" href="" title="Back To All Fits" alt="Back To All Fits" name="" />
+                    <area shape="rect" coords="608,118,716,138" href="" title="Shop This Fit" alt="Shop This Fit" name="" />
+                    <area shape="rect" coords="602,382,728,409" href="" title="View Size Chart" alt="View Size Chart" name="" />
+                    <area shape="rect" coords="2,2,586,548" href="" title="Shop Straight Shape Jeans" alt="Shop Straight Shape Jeans" name="" />
+                </map>
+            </div>
+        </div>
+    </div>
+    <div id="looseFitWrapper" style="display:none;">
+        <div class="dashboard">
+            <a href="#" onclick="javascript:return false;" id="arrow-next" class="arrow-next"><img src="shim.gif" class="round_arrow" width="22" height="15" border="0" alt="" /></a>
+            <div id="button-front" class="button-front shopnow">Front</div>
+            <div id="button-side" class="button-side shopnow">Side</div>
+            <div id="button-back" class="button-back shopnow">Back</div>
+        </div>
+    </div>
+    <div id="relaxedFitWrapper" style="display:none;">
+        <div class="dashboard2">
+            <a href="#" onclick="javascript:return false;" id="arrow-next2" class="arrow-next"><img src="shim.gif" class="round_arrow" width="22" height="15" border="0" alt="" /></a>
+            <div id="button-front2" class="button-front shopnow">Front</div>
+            <div id="button-side2" class="button-side shopnow">Side</div>
+            <div id="button-back2" class="button-back shopnow">Back</div>
+        </div>
+    </div>
+    <div id="classicFitWrapper" style="display:none;">
+        <div class="dashboard3">
+            <a href="#" onclick="javascript:return false;" id="arrow-next3" class="arrow-next"><img src="shim.gif" class="round_arrow" width="22" height="15" border="0" alt="" /></a>
+            <div id="button-front3" class="button-front shopnow">Front</div>
+            <div id="button-side3" class="button-side shopnow">Side</div>
+            <div id="button-back3" class="button-back shopnow">Back</div>
+        </div>
+    </div>
+    <div id="traditionalFitWrapper" style="display:none;">
+        <div class="dashboard4">
+            <a href="#" onclick="javascript:return false;" id="arrow-next4" class="arrow-next"><img src="shim.gif" class="round_arrow" width="22" height="15" border="0" alt="" /></a>
+            <div id="button-front4" class="button-front shopnow">Front</div>
+            <div id="button-side4" class="button-side shopnow">Side</div>
+            <div id="button-back4" class="button-back shopnow">Back</div>
+        </div>
+    </div>
+    <div id="straightFitWrapper" style="display:none;">
+        <div class="dashboard5">
+            <a href="#" onclick="javascript:return false;" id="arrow-next5" class="arrow-next"><img src="shim.gif" class="round_arrow" width="22" height="15" border="0" alt="" /></a>
+            <div id="button-front5" class="button-front shopnow">Front</div>
+            <div id="button-side5" class="button-side shopnow">Side</div>
+            <div id="button-back5" class="button-back shopnow">Back</div>
+        </div>
+    </div>
+    <div id="slimFitWrapper" style="display:none;">
+        <div class="dashboard6">
+            <a href="#" onclick="javascript:return false;" id="arrow-next6" class="arrow-next"><img src="shim.gif" class="round_arrow" width="22" height="15" border="0" alt="" /></a>
+            <div id="button-front6" class="button-front shopnow">Front</div>
+            <div id="button-side6" class="button-side shopnow">Side</div>
+            <div id="button-back6" class="button-back shopnow">Back</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+    <div style="clear: both;">
+    </div>
+</div>
+
+</body>
+</html>
+

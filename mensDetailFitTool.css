@@ -1,0 +1,554 @@
+﻿div#mensDetailFitGuide {
+    position:relative;
+    margin: 100px auto 0;
+    width: 792px;
+    height:550px;  
+}
+.carousel {
+    position:relative;
+    height:550px;
+    width:792px;
+}
+.carousel li {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    display:none;
+}
+
+.carousel li.active {
+    z-index:10;
+    display:block;
+}
+
+.carousel li.last-active {
+    z-index:9;
+}
+.looseFitWrapper {
+    width:792px;
+    height:550px;
+    margin:0 0 0 0;
+    float:right;
+    display:inline;
+    padding:0;
+    background-color:transparent;
+    position:relative;    
+}
+.relaxedFitWrapper {
+    width:792px;
+    height:550px;
+    margin:0 0 0 0;
+    float:right;
+    display:inline;
+    padding:0;
+    background-color:transparent;
+    position:relative;    
+}
+.classicFitWrapper {
+    width:792px;
+    height:550px;
+    margin:0 0 0 0;
+    float:right;
+    display:inline;
+    padding:0;
+    background-color:transparent;
+    position:relative;    
+}
+.traditionalFitWrapper {
+    width:792px;
+    height:550px;
+    margin:0 0 0 0;
+    float:right;
+    display:inline;
+    padding:0;
+    background-color:transparent;
+    position:relative;   
+}
+.straightFitWrapper {
+    width:792px;
+    height:550px;
+    margin:0 0 0 0;
+    float:right;
+    display:inline;
+    padding:0;
+    background-color:transparent;
+    position:relative;     
+}
+.slimFitWrapper {
+    width:792px;
+    height:550px;
+    margin:0 0 0 0;
+    float:right;
+    display:inline;
+    padding:0;
+    background-color:transparent;
+    position:relative;     
+}
+ul {
+    color: #323232;
+    font-family: Lucida Sans Unicode;
+    font-size: 12px;
+    font-weight: normal;
+    height: 550px;
+    list-style: none;
+    margin:7px 0 0 20px;
+    padding:0;
+}
+ul li {line-height:17px;}
+ul#looseFit {
+    list-style-type: none;
+    margin:0 0 0 0;    
+}
+    ul#looseFit li {
+        float: left;
+    }
+    ul#looseFit li#front {
+        float:left;
+        background-image: url(slide_loose_front.jpg);
+        background-repeat: no-repeat;
+        width: 792px;
+        height: 550px;
+        position:relative;
+        overflow:visible;
+    }
+    ul#looseFit li#side {
+        float:left;
+        background-image: url(slide_loose_side.jpg);
+        background-repeat: no-repeat;
+        width: 792px;
+        height: 550px;
+        position:relative;
+        overflow:visible;
+    }
+    ul#looseFit li#back {
+        float:left;
+        background-image: url(slide_loose_back.jpg);
+        background-repeat: no-repeat;
+        width: 792px;
+        height: 550px;
+        position:relative;
+        overflow:visible;
+    }
+ul#relaxedFit {
+    list-style-type: none;
+    margin:0 0 0 0;    
+}
+    ul#relaxedFit li {
+        float: left;
+    }
+    ul#relaxedFit li#front2 {
+        float:left;
+        background-image: url(slide_relaxed_front.jpg);
+        background-repeat: no-repeat;
+        width: 792px;
+        height: 550px;
+        position:relative;
+        overflow:visible;
+    }
+    ul#relaxedFit li#side2 {
+        float:left;
+        background-image: url(slide_relaxed_side.jpg);
+        background-repeat: no-repeat;
+        width: 792px;
+        height: 550px;
+        position:relative;
+        overflow:visible;
+    }
+    ul#relaxedFit li#back2 {
+        float:left;
+        background-image: url(slide_relaxed_back.jpg);
+        background-repeat: no-repeat;
+        width: 792px;
+        height: 550px;
+        position:relative;
+        overflow:visible;
+    }
+ul#classicFit {
+        list-style-type: none;
+        margin:0 0 0 0;    
+    }
+    ul#classicFit li {
+        float: left;
+    }
+    ul#classicFit li#front3 {
+        float:left;
+        background-image: url(slide_classic_front.jpg);
+        background-repeat: no-repeat;
+        width: 792px;
+        height: 550px;
+        position:relative;
+        overflow:visible;
+    }
+    ul#classicFit li#side3 {
+        float:left;
+        background-image: url(slide_classic_side.jpg);
+        background-repeat: no-repeat;
+        width: 792px;
+        height: 550px;
+        position:relative;
+        overflow:visible;
+    }
+    ul#classicFit li#back3 {
+        float:left;
+        background-image: url(slide_classic_back.jpg);
+        background-repeat: no-repeat;
+        width: 792px;
+        height: 550px;
+        position:relative;
+        overflow:visible;
+    }
+ul#traditionalFit {
+    list-style-type: none;
+    margin:0 0 0 0;    
+}
+    ul#traditionalFit li {
+        float: left;
+    }
+    ul#traditionalFit li#front4 {
+        float:left;
+        background-image: url(slide_trad_front.jpg);
+        background-repeat: no-repeat;
+        width: 792px;
+        height: 550px;
+        position:relative;
+        overflow:visible;
+    }
+    ul#traditionalFit li#side4 {
+        float:left;
+        background-image: url(slide_trad_side.jpg);
+        background-repeat: no-repeat;
+        width: 792px;
+        height: 550px;
+        position:relative;
+        overflow:visible;
+    }
+    ul#traditionalFit li#back4 {
+        float:left;
+        background-image: url(slide_trad_back.jpg);
+        background-repeat: no-repeat;
+        width: 792px;
+        height: 550px;
+        position:relative;
+        overflow:visible;
+    }
+ul#straightFit {
+    list-style-type: none;
+    margin:0 0 0 0;    
+}
+    ul#straightFit li {
+        float: left;
+    }
+    ul#straightFit li#front5 {
+        float:left;
+        background-image: url(slide_straight_front.jpg);
+        background-repeat: no-repeat;
+        width: 792px;
+        height: 550px;
+        position:relative;
+        overflow:visible;
+    }
+    ul#straightFit li#side5 {
+        float:left;
+        background-image: url(slide_straight_side.jpg);
+        background-repeat: no-repeat;
+        width: 792px;
+        height: 550px;
+        position:relative;
+        overflow:visible;
+    }
+    ul#straightFit li#back5 {
+        float:left;
+        background-image: url(slide_straight_back.jpg);
+        background-repeat: no-repeat;
+        width: 792px;
+        height: 550px;
+        position:relative;
+        overflow:visible;
+    }
+ul#slimFit {
+        list-style-type: none;
+        margin:0 0 0 0;    
+    }
+    ul#slimFit li {
+        float: left;
+    }
+    ul#slimFit li#front6 {
+        float:left;
+        background-image: url(slide_slim_front.jpg);
+        background-repeat: no-repeat;
+        width: 792px;
+        height: 550px;
+        position:relative;
+        overflow:visible;
+    }
+    ul#slimFit li#side6 {
+        float:left;
+        background-image: url(slide_slim_side.jpg);
+        background-repeat: no-repeat;
+        width: 792px;
+        height: 550px;
+        position:relative;
+        overflow:visible;
+    }
+    ul#slimFit li#back6 {
+        float:left;
+        background-image: url(slide_slim_back.jpg);
+        background-repeat: no-repeat;
+        width: 792px;
+        height: 550px;
+        position:relative;
+        overflow:visible;
+    }
+div.dashboard, div.dashboard2, div.dashboard3, 
+div.dashboard4, div.dashboard5, div.dashboard6 {
+    position:absolute;
+    width:40px;
+    height:60px;
+    right:215px;
+    top:478px;
+    z-index:999;    
+}
+div.dashboard a, div.dashboard2 a, div.dashboard3 a, 
+div.dashboard4 a, div.dashboard5 a, div.dashboard6 a {
+    text-decoration:none;    
+}
+div.dashboard img.round_arrow, div.dashboard2 img.round_arrow, div.dashboard3 img.round_arrow, 
+div.dashboard4 img.round_arrow, div.dashboard5 img.round_arrow, div.dashboard6 img.round_arrow {
+    cursor:pointer;
+    width:22px;
+    border:0px;
+    height:15px;
+    z-index:999;
+    background-image: url(sprite_fittool.png);
+    background-position: 0px -100px;
+    background-repeat: no-repeat;     
+}
+div.shopnow {
+    font-family: Lucida Sans Unicode;
+    font-size: 10px;
+    font-weight:bold;
+    color:#999999;
+    text-transform:uppercase;
+    text-decoration:none;
+    cursor:pointer;   
+}
+div.button-side {
+    margin-top:-4px    
+}
+div.button-back {
+    margin-top:-4px    
+}
+div.shopnow:hover {
+    font-family: Lucida Sans Unicode;
+    font-size: 10px;
+    font-weight:bold;
+    color:#000000;
+    text-transform:uppercase;
+    text-decoration:none;
+    cursor:pointer;   
+}
+div.shopnow.nav_on {
+    font-family: Lucida Sans Unicode;
+    font-size: 10px;
+    font-weight:bold;
+    color:#000000;
+    text-transform:uppercase;
+    text-decoration:none;
+    cursor:pointer;
+}
+div.shopnow.nav_off {
+    font-size: 10px;        
+}
+div.details {
+    font-family: Lucida Sans Unicode;
+    font-size: 12px;
+    font-weight:bold;
+    color:#000000;
+    text-transform:uppercase;
+    text-decoration:none;
+    cursor:pointer;   
+}
+div.details a {
+    text-decoration:none;    
+}
+div.shop_details {
+    margin: 5px 0 0 13px;
+    float:left;
+    display:inline;
+    z-index:100;
+    overflow:visible;    
+}
+div.shop_details img.gray_arrow {
+    background-image: url(sprite_fittool.png);
+    background-position: -25px -100px;
+    background-repeat: no-repeat;        
+}
+div.details_shop {
+    margin: 5px 0 0 13px;
+    float:left;
+    display:inline;
+    z-index:100;
+    overflow:visible;    
+}
+div.details_shop img.gray_arrow {
+    background-image: url(sprite_fittool.png);
+    background-position: -25px -100px;
+    background-repeat: no-repeat;        
+}
+* html div#curve-shape {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src=sprite_fittool.png,sizingMethod='crop');
+}
+*+html div#curve-shape {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src=sprite_fittool.png,sizingMethod='crop');
+}
+* html div#slightly-curvey {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src=sprite_fittool.png,sizingMethod='crop');
+}
+*+html div#slightly-curvey {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src=sprite_fittool.png,sizingMethod='crop');
+}
+* html div#straight-shape {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src=sprite_fittool.png,sizingMethod='crop');
+}
+*+html div#straight-shape {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src=sprite_fittool.png,sizingMethod='crop');
+}
+
+
+.slideshow a.paddle-right
+    {
+        top: 243px !important;
+        right: 0px !important;
+        width: 31px !important;
+        height: 62px !important;
+        background: url(right_arrow.png) no-repeat scroll 0 0 transparent !important;
+    }
+    .slideshow a.paddle-left
+    {
+        top: 243px !important;
+        left: 0px !important;
+        width: 31px !important;
+        height: 62px !important;
+        background: url(left_arrow.png) no-repeat scroll 0 0 transparent !important;
+    }
+    div.slideshow div.controls a {background: url(dot_on.png) no-repeat scroll 0 0 transparent !important;}
+    div.slideshow div.controls a.selected {background: url(dot_off.png) no-repeat scroll 0 0 transparent !important;}
+    .slideshow
+    {
+        height: 550px !important;
+        width: 792px !important;
+        float: left; /* margin: 5px 0 0 22px !important; */
+    }
+    .controls
+    {
+        display: block !important;
+    }
+    .controller {display:none}
+    div.slideshow.small {
+   width: 697px;
+   height: 448px;
+}
+
+div.slideshow.medium {
+   width: 795px;
+   height: 417px;	
+}
+
+div.slideshow {
+   position: relative;
+   width: 956px;
+   height: 450px;
+   margin: 0;
+   padding: 0;
+}
+
+div.slideshow div.slides {
+   position: absolute;
+   z-index: 1;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   overflow: hidden;
+}
+
+div.slideshow div.slides div {
+   display: none;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top:0;
+   left:0;
+   overflow: hidden;
+}
+
+div.slideshow div.slides div.selected {
+   display: block;
+}
+
+div.slideshow div.controls {
+   position: absolute;
+   z-index: 3;
+   right: 10px;
+   top: 10px;
+}
+
+div.slideshow div.controls a {
+   display: block;
+   float: left;
+   margin-right: 2px\9;
+   padding: 0 2px;
+   width: 11px;
+   height: 11px;
+   background: transparent url(/assets/ocp/content/skin/slideshow/dot_on.png) no-repeat center center;  
+}
+div.slideshow div.controls a {
+    *margin-right: 2px;    
+}
+
+div.slideshow div.controls a.selected {
+   background-image: url('/assets/ocp/content/skin/slideshow/dot_off.png');
+}
+
+div.slideshow a.paddle-left, div.slideshow a.paddle-right {
+   position: absolute;
+   z-index: 2;
+   top: 150px;
+   width: 37px;
+   height: 150px;
+   cursor: pointer;
+}
+
+div.slideshow a.paddle-left {
+   left: 0;
+   background: transparent url(/assets/ocp/content/skin/sprites/slideshow/slideshow_paddles_left_sprite.png) no-repeat -74px 0;
+}
+
+div.slideshow a.paddle-right {
+   right: 0;
+   background: transparent url(/assets/ocp/content/skin/sprites/slideshow/slideshow_paddles_right_sprite.png) no-repeat 0 0;
+}
+
+div.slideshow a.paddle-left:hover {
+   background-position: -37px 0;
+}
+
+div.slideshow a.paddle-right:hover {
+   background-position: -37px 0;
+}
+
+div.slideshow a.paddle-left:active {
+   background-position: 0 0;
+}
+
+div.slideshow a.paddle-right:active {
+   background-position: -74px 0;
+}
+    .controller {display:none}

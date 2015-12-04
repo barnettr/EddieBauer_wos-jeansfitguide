@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Denim Fit Tool - Proof Of Concept</title>
+    <link rel="stylesheet" href="mensfitTool.css" type="text/css" media="screen" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript" src="module.fitTool.120614.js"></script>
+		<script language="javascript" type="text/javascript">
+		    jQuery(document).ready(function () {
+		        jQuery('div.carousel').fitTool('init');
+		        jQuery('#button-front').click(function () { jQuery('div.looseFitWrapper div.carousel li#front').fitTool('front'); });
+		        jQuery('#button-side').click(function () { jQuery('div.looseFitWrapper div.carousel li#side').fitTool('side'); });
+		        jQuery('#button-back').click(function () { jQuery('div.looseFitWrapper div.carousel li#back').fitTool('back'); });
+		        jQuery('#arrow-next').click(function () { jQuery('div.looseFitWrapper div.carousel li.active').fitTool('arrow'); });
+
+		        jQuery('#button-front2').click(function () { jQuery('div.relaxedFitWrapper div.carousel li#front2').fitTool('front'); });
+		        jQuery('#button-side2').click(function () { jQuery('div.relaxedFitWrapper div.carousel li#side2').fitTool('side'); });
+		        jQuery('#button-back2').click(function () { jQuery('div.relaxedFitWrapper div.carousel li#back2').fitTool('back'); });
+		        jQuery('#arrow-next2').click(function () { jQuery('div.relaxedFitWrapper div.carousel li.active').fitTool('arrow'); });
+
+		        jQuery('#button-front3').click(function () { jQuery('div.classicFitWrapper div.carousel li#front3').fitTool('front'); });
+		        jQuery('#button-side3').click(function () { jQuery('div.classicFitWrapper div.carousel li#side3').fitTool('side'); });
+		        jQuery('#button-back3').click(function () { jQuery('div.classicFitWrapper div.carousel li#back3').fitTool('back'); });
+		        jQuery('#arrow-next3').click(function () { jQuery('div.classicFitWrapper div.carousel li.active').fitTool('arrow'); });
+
+		        jQuery('#button-front4').click(function () { jQuery('div.traditionalFitWrapper div.carousel li#front4').fitTool('front'); });
+		        jQuery('#button-side4').mouseup(function () { jQuery('div.traditionalFitWrapper div.carousel li#side4').fitTool('side'); });
+		        jQuery('#button-back4').click(function () { jQuery('div.traditionalFitWrapper div.carousel li#back4').fitTool('back'); });
+		        jQuery('#arrow-next4').click(function () { jQuery('div.traditionalFitWrapper div.carousel li.active').fitTool('arrow'); });
+
+		        jQuery('#button-front5').click(function () { jQuery('div.straightFitWrapper div.carousel li#front5').fitTool('front'); });
+		        jQuery('#button-side5').click(function () { jQuery('div.straightFitWrapper div.carousel li#side5').fitTool('side'); });
+		        jQuery('#button-back5').click(function () { jQuery('div.straightFitWrapper div.carousel li#back5').fitTool('back'); });
+		        jQuery('#arrow-next5').click(function () { jQuery('div.straightFitWrapper div.carousel li.active').fitTool('arrow'); });
+
+		        jQuery('#button-front6').click(function () { jQuery('div.slimFitWrapper div.carousel li#front6').fitTool('front'); });
+		        jQuery('#button-side6').click(function () { jQuery('div.slimFitWrapper div.carousel li#side6').fitTool('side'); });
+		        jQuery('#button-back6').click(function () { jQuery('div.slimFitWrapper div.carousel li#back6').fitTool('back'); });
+		        jQuery('#arrow-next6').click(function () { jQuery('div.slimFitWrapper div.carousel li.active').fitTool('arrow'); });
+
+		        function getPage(i) {
+		            jQuery('.control-button[index=' + i + ']').trigger('click');
+		        }
+
+		        function preload(arrayOfImages) {
+		            $(arrayOfImages).each(function () {
+		                $('<img/>')[0].src = this;
+		            });
+		        }
+
+		        preload([
+                    'sprite_models_mens.jpg'
+                ]);
+		    });   
+		</script>	
+</head>
+<body>
+    <div class="fitTool">
+        <div class="looseFitWrapper">
+            <div class="looseflag">
+                <a href="mensDetailFitGuide.html?selectedIndex=0">
+                    <img id="loose_flag" class="slide" src="shim.gif" width="121" height="23" border="0" alt="Men's Loose Fit" title="Men's Loose Fit" /></a>
+            </div>
+            <div class="listWrapper">
+                <ul class="listWrapper">
+                    <li>Sits Below Waist</li>
+                    <li>Roomy Seat &amp; Thigh</li>
+                    <li>Slightly Tapered Leg</li>
+                </ul>
+            </div>
+            <div class="carousel">
+                <ul id="looseFit" class="column">
+                    <li id="front" class="front active"><a href="mensDetailFitGuide.html?selectedIndex=0"><img src="shim.gif" usemap="m_front" width="130" height="360" border="0" alt="" /></a></li>
+                    <li id="side" class="side"><a href="mensDetailFitGuide.html?selectedIndex=0"><img src="shim.gif" usemap="m_side" width="130" height="360" border="0" alt="" /></a></li>
+                    <li id="back" class="back"><a href="mensDetailFitGuide.html?selectedIndex=0"><img src="shim.gif" usemap="m_back" width="130" height="360" border="0" alt="" /></a></li>
+                </ul>
+            </div>
+            <div class="dashboard">
+                <a href="#" onclick="javascript:return false;" id="arrow-next" class="arrow-next shopnow"><img src="shim.gif" class="round_arrow" width="22" height="15" border="0" alt="" /></a>
+                <div id="button-front" class="button-front shopnow">Front</div>
+                <div id="button-side" class="button-side shopnow">Side</div>
+                <div id="button-back" class="button-back shopnow">Back</div>
+            </div>
+            <div class="shop_details details">
+                <a href="" title=""	name="">
+				    <span>
+					    <div title="Details" class="details">
+						    Details
+						    <img src="shim.gif" class="gray_arrow" width="6" height="9" border="0" alt="Details" style="display: inline !important;" />
+					    </div>
+				    </span>
+			    </a>
+            </div>
+            <div class="details_shop details">
+                <a href="" title=""	name="">
+				    <span>
+					    <div title="Shop This Fit" class="details">
+						    Shop This Fit
+						    <img src="shim.gif" class="gray_arrow" width="6" height="9" border="0" alt="Details" style="display: inline !important;" />
+					    </div>
+				    </span>
+			    </a>
+            </div>
+        </div>
+        <div class="relaxedFitWrapper">
+            <div class="relaxedflag">
+                <a href="mensDetailFitGuide.html?selectedIndex=1">
+                    <img id="relaxed_flag" class="slide" src="shim.gif" width="166" height="23" border="0" alt="Men's Relaxed Fit" title="Men's Relaxed Fit" /></a>
+            </div>
+            <div class="listWrapper">
+                <ul class="listWrapper">
+                    <li>Sits Below Waist</li>
+                    <li>Roomy Seat &amp; Thigh</li>
+                    <li>Slightly Tapered Leg</li>
+                </ul>
+            </div>
+            
+            <div class="carousel">
+                <ul id="relaxedFit" class="column">
+                    <li id="front2" class="front active"><a href="mensDetailFitGuide.html?selectedIndex=1"><img src="shim.gif" width="130" height="360" border="0" alt="" /></a></li>
+                    <li id="side2" class="side"><a href="mensDetailFitGuide.html?selectedIndex=1"><img src="shim.gif" width="130" height="360" border="0" alt="" /></a></li>
+                    <li id="back2" class="back"><a href="mensDetailFitGuide.html?selectedIndex=1"><img src="shim.gif" width="130" height="360" border="0" alt="" /></a></li>
+                </ul>
+                
+            </div>
+            <div class="dashboard">
+                <a href="#" onclick="javascript:return false;" id="arrow-next2" class="arrow-next shopnow"><img src="shim.gif" class="round_arrow" width="22" height="15" border="0" alt="" /></a>
+                <div id="button-front2" class="button-front shopnow">Front</div>
+                <div id="button-side2" class="button-side shopnow">Side</div>
+                <div id="button-back2" class="button-back shopnow">Back</div>
+            </div>
+            <div class="shop_details details">
+                <a href="" title=""	name="">
+				    <span>
+					    <div title="Details" class="details">
+						    Details
+						    <img src="shim.gif" class="gray_arrow" width="6" height="9" border="0" alt="Details" style="display: inline !important;" />
+					    </div>
+				    </span>
+			    </a>
+            </div>
+            <div class="details_shop details">
+                <a href="" title=""	name="">
+				    <span>
+					    <div title="Shop This Fit" class="details">
+						    Shop This Fit
+						    <img src="shim.gif" class="gray_arrow" width="6" height="9" border="0" alt="Details" style="display: inline !important;" />
+					    </div>
+				    </span>
+			    </a>
+            </div>
+        </div>
+        <div class="classicFitWrapper">
+            <div class="classicflag">
+                <a href="mensDetailFitGuide.html?selectedIndex=2">
+                    <img id="classic_flag" class="slide" src="shim.gif" width="166" height="23" border="0" alt="Men's Classic Fit" title="Men's Classic Fit" /></a>
+            </div>
+            <div class="listWrapper">
+                <ul class="listWrapper">
+                    <li>Sits Below Waist</li>
+                    <li>Roomy Seat &amp; Thigh</li>
+                    <li>Slightly Tapered Leg</li>
+                </ul>
+            </div>
+            <div class="carousel">
+                <ul id="classicFit" class="column">
+                    <li id="front3" class="front active"><a href="mensDetailFitGuide.html?selectedIndex=2"><img src="shim.gif" width="130" height="360" border="0" alt="" /></a></li>
+                    <li id="side3" class="side"><a href="mensDetailFitGuide.html?selectedIndex=2"><img src="shim.gif" width="130" height="360" border="0" alt="" /></a></li>
+                    <li id="back3" class="back"><a href="mensDetailFitGuide.html?selectedIndex=2"><img src="shim.gif" width="130" height="360" border="0" alt="" /></a></li>
+                </ul>
+            </div>
+            <div class="dashboard">
+                <a href="#" onclick="javascript:return false;" id="arrow-next3" class="arrow-next shopnow"><img src="shim.gif" class="round_arrow" width="22" height="15" border="0" alt="" /></a>
+                <div id="button-front3" class="button-front shopnow">Front</div>
+                <div id="button-side3" class="button-side shopnow">Side</div>
+                <div id="button-back3" class="button-back shopnow">Back</div>
+            </div>
+            <div class="shop_details details">
+                <a href="" title=""	name="">
+				    <span>
+					    <div title="Details" class="details">
+						    Details
+						    <img src="shim.gif" class="gray_arrow" width="6" height="9" border="0" alt="Details" style="display: inline !important;" />
+					    </div>
+				    </span>
+			    </a>
+            </div>
+            <div class="details_shop details">
+                <a href="" title=""	name="">
+				    <span>
+					    <div title="Shop This Fit" class="details">
+						    Shop This Fit
+						    <img src="shim.gif" class="gray_arrow" width="6" height="9" border="0" alt="Details" style="display: inline !important;" />
+					    </div>
+				    </span>
+			    </a>
+            </div>
+        </div>
+        <div class="traditionalFitWrapper">
+            <div class="traditionalflag">
+                <a href="mensDetailFitGuide.html?selectedIndex=3">  
+                    <img id="traditional_flag" class="slide" src="shim.gif" width="166" height="23" border="0" alt="Men's Traditional Fit" title="Men's Traditional Fit" /></a>
+            </div>
+            <div class="listWrapper">
+                <ul class="listWrapper">
+                    <li>Sits Below Waist</li>
+                    <li>Roomy Seat &amp; Thigh</li>
+                    <li>Slightly Tapered Leg</li>
+                </ul>
+            </div>
+            <div class="carousel">
+                <ul id="traditionalFit" class="column">
+                    <li id="front4" class="front active"><a href="mensDetailFitGuide.html?selectedIndex=3"><img src="shim.gif" width="130" height="360" border="0" alt="" /></a></li>
+                    <li id="side4" class="side"><a href="mensDetailFitGuide.html?selectedIndex=3"><img src="shim.gif" width="130" height="360" border="0" alt="" /></a></li>
+                    <li id="back4" class="back"><a href="mensDetailFitGuide.html?selectedIndex=3"><img src="shim.gif" width="130" height="360" border="0" alt="" /></a></li>
+                </ul>
+            </div>
+            <div class="dashboard">
+                <a href="#" onclick="javascript:return false;" id="arrow-next4" class="arrow-next shopnow"><img src="shim.gif" class="round_arrow" width="22" height="15" border="0" alt="" /></a>
+                <div id="button-front4" class="button-front shopnow">Front</div>
+                <div id="button-side4" class="button-side shopnow">Side</div>
+                <div id="button-back4" class="button-back shopnow">Back</div>
+            </div>
+            <div class="shop_details details">
+                <a href="" title=""	name="">
+				    <span>
+					    <div title="Details" class="details">
+						    Details
+						    <img src="shim.gif" class="gray_arrow" width="6" height="9" border="0" alt="Details" style="display: inline !important;" />
+					    </div>
+				    </span>
+			    </a>
+            </div>
+            <div class="details_shop details">
+                <a href="" title=""	name="">
+				    <span>
+					    <div title="Shop This Fit" class="details">
+						    Shop This Fit
+						    <img src="shim.gif" class="gray_arrow" width="6" height="9" border="0" alt="Details" style="display: inline !important;" />
+					    </div>
+				    </span>
+			    </a>
+            </div>
+        </div>
+        <div class="straightFitWrapper">
+            <div class="straightflag">
+                <a href="mensDetailFitGuide.html?selectedIndex=4">
+                    <img id="straight_flag" class="slide" src="shim.gif" width="166" height="23" border="0" alt="Men's Straight Fit" title="Men's Straight Fit" /></a>
+            </div>
+            <div class="listWrapper">
+                <ul class="listWrapper">
+                    <li>Sits Below Waist</li>
+                    <li>Roomy Seat &amp; Thigh</li>
+                    <li>Slightly Tapered Leg</li>
+                </ul>
+            </div>
+            <div class="carousel">
+                <ul id="straightFit" class="column">
+                    <li id="front5" class="front active"><a href="mensDetailFitGuide.html?selectedIndex=4"><img src="shim.gif" width="130" height="360" border="0" alt="" /></a></li>
+                    <li id="side5" class="side"><a href="mensDetailFitGuide.html?selectedIndex=4"><img src="shim.gif" width="130" height="360" border="0" alt="" /></a></li>
+                    <li id="back5" class="back"><a href="mensDetailFitGuide.html?selectedIndex=4"><img src="shim.gif" width="130" height="360" border="0" alt="" /></a></li>
+                </ul>
+            </div>
+            <div class="dashboard">
+                <a href="#" onclick="javascript:return false;" id="arrow-next5" class="arrow-next shopnow"><img src="shim.gif" class="round_arrow" width="22" height="15" border="0" alt="" /></a>
+                <div id="button-front5" class="button-front shopnow">Front</div>
+                <div id="button-side5" class="button-side shopnow">Side</div>
+                <div id="button-back5" class="button-back shopnow">Back</div>
+            </div>
+            <div class="shop_details details">
+                <a href="" title=""	name="">
+				    <span>
+					    <div title="Details" class="details">
+						    Details
+						    <img src="shim.gif" class="gray_arrow" width="6" height="9" border="0" alt="Details" style="display: inline !important;" />
+					    </div>
+				    </span>
+			    </a>
+            </div>
+            <div class="details_shop details">
+                <a href="" title=""	name="">
+				    <span>
+					    <div title="Shop This Fit" class="details">
+						    Shop This Fit
+						    <img src="shim.gif" class="gray_arrow" width="6" height="9" border="0" alt="Details" style="display: inline !important;" />
+					    </div>
+				    </span>
+			    </a>
+            </div>
+        </div>
+        <div class="slimFitWrapper">
+            <div class="slimflag">
+                <a href="mensDetailFitGuide.html?selectedIndex=5">
+                    <img id="slim_flag" class="slide" src="shim.gif" width="166" height="23" border="0" alt="Men's Straight Fit" title="Men's Straight Fit" /></a>
+            </div>
+            <div class="listWrapper">
+                <ul class="listWrapper">
+                    <li>Sits Below Waist</li>
+                    <li>Roomy Seat &amp; Thigh</li>
+                    <li>Slightly Tapered Leg</li>
+                </ul>
+            </div>
+            <div class="carousel">
+                <ul id="slimFit" class="column">
+                    <li id="front6" class="front active"><a href="mensDetailFitGuide.html?selectedIndex=5"><img src="shim.gif" width="130" height="360" border="0" alt="" /></a></li>
+                    <li id="side6" class="side"><a href="mensDetailFitGuide.html?selectedIndex=5"><img src="shim.gif" width="130" height="360" border="0" alt="" /></a></li>
+                    <li id="back6" class="back"><a href="mensDetailFitGuide.html?selectedIndex=5"><img src="shim.gif" width="130" height="360" border="0" alt="" /></a></li>
+                </ul>
+            </div>
+            <div class="dashboard">
+                <a href="#" onclick="javascript:return false;" id="arrow-next6" class="arrow-next shopnow"><img src="shim.gif" class="round_arrow" width="22" height="15" border="0" alt="" /></a>
+                <div id="button-front6" class="button-front shopnow">Front</div>
+                <div id="button-side6" class="button-side shopnow">Side</div>
+                <div id="button-back6" class="button-back shopnow">Back</div>
+            </div>
+            <div class="shop_details details">
+                <a href="" title=""	name="">
+				    <span>
+					    <div title="Details" class="details">
+						    Details
+						    <img src="shim.gif" class="gray_arrow" width="6" height="9" border="0" alt="Details" style="display: inline !important;" />
+					    </div>
+				    </span>
+			    </a>
+            </div>
+            <div class="details_shop details">
+                <a href="" title=""	name="">
+				    <span>
+					    <div title="Shop This Fit" class="details">
+						    Shop This Fit
+						    <img src="shim.gif" class="gray_arrow" width="6" height="9" border="0" alt="Details" style="display: inline !important;" />
+					    </div>
+				    </span>
+			    </a>
+            </div>
+        </div>
+    </div>
+    <div style="clear:both; height:100px;">
+    </div>
+</body>
+</html>
+
